@@ -8,6 +8,6 @@ class DataPengantinComponent extends Component
 {
     public function render()
     {
-        return view('livewire.data-pengantin-component');
+        return view('livewire.data-pengantin-component')->layout("layouts.base");
     }
 }

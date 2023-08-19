@@ -8,6 +8,6 @@ class DataSumbanganComponent extends Component
 {
     public function render()
     {
-        return view('livewire.data-sumbangan-component');
+        return view('livewire.data-sumbangan-component')->layout("layouts.base");
     }
 }

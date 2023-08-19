@@ -8,6 +8,6 @@ class DataPanitiaComponent extends Component
 {
     public function render()
     {
-        return view('livewire.data-panitia-component');
+        return view('livewire.data-panitia-component')->layout("layouts.base");
     }
 }

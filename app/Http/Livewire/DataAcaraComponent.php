@@ -8,6 +8,6 @@ class DataAcaraComponent extends Component
 {
     public function render()
     {
-        return view('livewire.data-acara-component');
+        return view('livewire.data-acara-component')->layout("layouts.base");
     }
 }

@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Livewire\DashboardComponent;
+use App\Http\Livewire\DataAcaraComponent;
+use App\Http\Livewire\DataPanitiaComponent;
+use App\Http\Livewire\DataPengantinComponent;
+use App\Http\Livewire\DataSumbanganComponent;
+use App\Http\Livewire\DataTamuUndanganComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +19,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', DashboardComponent::class);
+
+Route::prefix('data')->group(function () {
+    Route::get('/acara', DataAcaraComponent::class);
+    Route::get('/pengantin', DataPengantinComponent::class);
+    Route::get('/tamu-undangan', DataTamuUndanganComponent::class);
+    Route::get('/panitia', DataPanitiaComponent::class);
+    Route::get('/sumbangan', DataSumbanganComponent::class);
 });

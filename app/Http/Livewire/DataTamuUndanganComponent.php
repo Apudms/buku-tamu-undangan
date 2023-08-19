@@ -8,6 +8,6 @@ class DataTamuUndanganComponent extends Component
 {
     public function render()
     {
-        return view('livewire.data-tamu-undangan-component');
+        return view('livewire.data-tamu-undangan-component')->layout("layouts.base");
     }
 }
