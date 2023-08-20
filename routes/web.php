@@ -23,15 +23,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', DashboardComponent::class);
 
-// Route::prefix('data')->group(function () {
-//     Route::get('/acara', DataAcaraComponent::class);
-//     Route::get('/pengantin', DataPengantinComponent::class);
-//     Route::get('/tamu-undangan', DataTamuUndanganComponent::class);
-//     Route::get('/tugas-panitia', DataTugasPanitiaComponent::class);
-//     Route::get('/panitia', DataPanitiaComponent::class);
-//     Route::get('/sumbangan', DataSumbanganComponent::class);
-// });
-
 Route::group(['prefix' => 'admin', 'middleware' => ['admin:admin']], function () {
     Route::get('/login', [AdminController::class, 'loginForm']);
     Route::post('/login', [AdminController::class, 'store'])->name('admin.login');
@@ -45,12 +36,12 @@ Route::middleware([
     Route::get('/admin/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::get('/acara', DataAcaraComponent::class);
-    Route::get('/pengantin', DataPengantinComponent::class);
-    Route::get('/tamu-undangan', DataTamuUndanganComponent::class);
-    Route::get('/tugas-panitia', DataTugasPanitiaComponent::class);
-    Route::get('/panitia', DataPanitiaComponent::class);
-    Route::get('/sumbangan', DataSumbanganComponent::class);
+    Route::get('/admin/acara', DataAcaraComponent::class);
+    Route::get('/admin/pengantin', DataPengantinComponent::class);
+    Route::get('/admin/tamu-undangan', DataTamuUndanganComponent::class);
+    Route::get('/admin/tugas-panitia', DataTugasPanitiaComponent::class);
+    Route::get('/admin/panitia', DataPanitiaComponent::class);
+    Route::get('/admin/sumbangan', DataSumbanganComponent::class);
 });
 
 Route::middleware([

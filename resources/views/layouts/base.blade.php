@@ -48,15 +48,15 @@
                             </a>
                         </li>
 
-                        <li class="sidebar-item @if(Request::is('data/acara')) active @endif">
-                            <a href="/data/acara" class='sidebar-link'>
+                        <li class="sidebar-item @if(Request::is('admin/acara')) active @endif">
+                            <a href="/admin/acara" class='sidebar-link'>
                                 <i class="bi bi-shop-window"></i>
                                 <span>Acara</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item @if(Request::is('data/pengantin')) active @endif">
-                            <a href="/data/pengantin" class='sidebar-link'>
+                        <li class="sidebar-item @if(Request::is('admin/pengantin')) active @endif">
+                            <a href="/admin/pengantin" class='sidebar-link'>
                                 <i class="bi bi-heart-half"></i>
                                 <span>Pengantin</span>
                             </a>
@@ -64,15 +64,15 @@
 
                         <li class="sidebar-title">Data Panitia</li>
 
-                        <li class="sidebar-item @if(Request::is('data/tugas-panitia')) active @endif">
-                            <a href="/data/tugas-panitia" class='sidebar-link'>
+                        <li class="sidebar-item @if(Request::is('admin/tugas-panitia')) active @endif">
+                            <a href="/admin/tugas-panitia" class='sidebar-link'>
                                 <i class="bi bi-clipboard-check-fill"></i>
                                 <span>Tugas Panitia</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item @if(Request::is('data/panitia')) active @endif">
-                            <a href="/data/panitia" class='sidebar-link'>
+                        <li class="sidebar-item @if(Request::is('admin/panitia')) active @endif">
+                            <a href="/admin/panitia" class='sidebar-link'>
                                 <i class="bi bi-person-badge-fill"></i>
                                 <span>Panitia</span>
                             </a>
@@ -80,15 +80,15 @@
 
                         <li class="sidebar-title">Data Tamu</li>
 
-                        <li class="sidebar-item @if(Request::is('data/tamu-undangan')) active @endif">
-                            <a href="/data/tamu-undangan" class='sidebar-link'>
+                        <li class="sidebar-item @if(Request::is('admin/tamu-undangan')) active @endif">
+                            <a href="/admin/tamu-undangan" class='sidebar-link'>
                                 <i class="bi bi-people-fill"></i>
                                 <span>Tamu Undangan</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item @if(Request::is('data/sumbangan')) active @endif">
-                            <a href="/data/sumbangan" class='sidebar-link'>
+                        <li class="sidebar-item @if(Request::is('admin/sumbangan')) active @endif">
+                            <a href="/admin/sumbangan" class='sidebar-link'>
                                 <i class="bi bi-envelope-heart-fill"></i>
                                 <span>Sumbangan</span>
                             </a>
