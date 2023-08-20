@@ -30,3 +30,13 @@ Route::prefix('data')->group(function () {
     Route::get('/panitia', DataPanitiaComponent::class);
     Route::get('/sumbangan', DataSumbanganComponent::class);
 });
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
