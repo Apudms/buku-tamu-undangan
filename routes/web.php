@@ -33,8 +33,8 @@ Route::get('/', DashboardComponent::class);
 // });
 
 Route::group(['prefix' => 'admin', 'middleware' => ['admin:admin']], function () {
-    Route::get('/login', AdminController::class, 'loginForm');
-    Route::post('/login', AdminController::class, 'store')->name('admin.login');
+    Route::get('/login', [AdminController::class, 'loginForm']);
+    Route::post('/login', [AdminController::class, 'store'])->name('admin.login');
 });
 
 Route::middleware([
