@@ -59,4 +59,4 @@ php artisan serve
 
 # 📖 API documentation
 Documentation using Postman:
-<a href="">Ecommerce Documentation V 1.0.0</a>
+<a href="">Invited Guest Book Management System Documentation V 1.0.0</a>
