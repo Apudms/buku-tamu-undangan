@@ -15,17 +15,18 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        \App\Models\Admin::factory()->create();
 
-        Acara::create(
-            [
-                'nama_acara' => 'Pernikahan',
-            ]
-        );
+        // Acara::create(
+        //     [
+        //         'nama_acara' => 'Pernikahan',
+        //     ]
+        // );
 
-        Acara::create(
-            [
-                'nama_acara' => 'Khitanan',
-            ]
-        );
+        // Acara::create(
+        //     [
+        //         'nama_acara' => 'Khitanan',
+        //     ]
+        // );
     }
 }
